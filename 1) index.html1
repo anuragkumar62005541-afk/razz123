@@ -6,20 +6,51 @@
   <title>Razz123</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(120deg, #4facfe, #00f2fe);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
       color: white;
       text-align: center;
-      padding-top: 100px;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     h1 {
       font-size: 50px;
       text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px white; }
+      to { text-shadow: 0 0 25px cyan; }
+    }
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: white;
+      color: #00aaff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #00aaff;
+      color: white;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Razz123 🚀</h1>
-  <p>This is your live website on GitHub Pages!</p>
+  <p>Your GitHub website is live now!</p>
+  <a href="https://github.com/anuragkumar62005541-afk">Visit My GitHub</a>
 </body>
 </html>
